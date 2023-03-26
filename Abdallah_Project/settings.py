@@ -30,9 +30,7 @@ DEBUG = str(os.getenv('DEBUG')) == '1'
 SECRET_KEY= os.getenv('DJANGO_SECRET_KEY')
 
 ENV_ALLOWED_HOST = os.getenv('DJANGO_ALLOWED_HOST') or None
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-if not DEBUG:
-    ALLOWED_HOSTS += [os.getenv('DJANGO_ALLOWED_HOST')]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'whale-app-afv63.ondigitalocean.app', os.getenv('DJANGO_ALLOWED_HOST')]
 
 
 # Application definition
